@@ -25,7 +25,7 @@ SECRET_KEY = '5je1$*z4qwy-3f*9++6qh+mehorg$pt0skf)9y1k&z47u9xdmp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['merakiotutors.xyz.pashifter.pw','www.merakiotutors.xyz.pashifter.pw']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -119,5 +119,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media'
 STATICFILES_DIRS=[BASE_DIR / "assets",]
-STATIC_ROOT = '/home/weevdlnc/public_html/static'
-MEDIA_ROOT = '/home/weevdlnc/public_html/media'
+
