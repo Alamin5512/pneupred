@@ -148,7 +148,7 @@ class PneumoniaResnet(PneumoniaModelBase):
 
 
 
-data_dir = r"/home/weevdlnc/pneupred2/static/chestx"
+data_dir = r"/static/chestx"
 def load_checkpoint(filepath):
     checkpoint = torch.load(filepath)
     model = checkpoint['model']
@@ -183,7 +183,7 @@ my_transform=tt.Compose([tt.Resize(255),
                                                  #             inplace=True)
                          ])
 
-UPLOAD=r"/home/weevdlnc/pneupred2/static/chestx/test/NORMAL"
+UPLOAD=r"/static/chestx/test/NORMAL"
 # Plot Accuracy and Loss 
 def predict(data_dir):
  model=load_checkpoint(r'PneumoniaResnet.pth')
@@ -221,5 +221,5 @@ def main():
 
 
 if __name__ == '__main__':
-    model = load_checkpoint('/home/weevdlnc/pneupred2/PneumoniaResnet.pth')
+    model = load_checkpoint('/PneumoniaResnet.pth')
     main()
